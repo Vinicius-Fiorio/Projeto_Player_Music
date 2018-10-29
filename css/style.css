@@ -1,0 +1,118 @@
+.topo{
+  margin-top:50px;
+  height: 25px;
+  width: 300px;
+  background-color: rgb(232, 232, 232,0.8);
+}
+.bolas{
+  padding-top: 12px;
+}
+.circle2{
+    border-radius:100%;
+    border:1px solid #fcef62;
+    width:12px;
+    height:12px;
+    background-color:#fcef62;
+    margin-left: 240px;
+    margin-top: -5px;
+}
+.circle{
+  margin-top: -12px;
+    border-radius:100%;
+    border:1px solid #7bf470;
+    width:12px;
+    height:12px;
+    background-color:#7bf470;
+    margin-left: 220px;
+}
+.circle3{
+    border-radius:100%;
+    border:1px solid #fc6161;
+    width:12px;
+    height:12px;
+    background-color:#fc6161;
+    margin-left: 260px;
+    margin-top: -12px;
+}
+.menu{
+  width: 300px;
+  height: 500px;
+  background-color: rgba(44, 44, 44, 0.8);
+}
+.imagem{
+  margin-top: 50px;
+  margin-left: -5px;
+}
+.musica{
+  color: white;
+  font-size: 20px;
+}
+.artista{
+  font-weight: 500;
+  color: #808080;
+}
+.botao{
+  margin-top: 30px;
+}
+.action{
+    margin-left: -5px;
+}
+.action i{
+  margin-left: 50px;
+  color: white;
+  font-size: 20px;
+}
+.play i{
+  font-size: 25px;
+}
+.barra{
+  margin-left: 18px;
+}
+.barra label{
+  color: #9C9C9C;
+  font-size: 12px;
+  font-weight: bold;
+}
+input[type='range']{
+  margin-top: 20px;
+  -webkit-appearance:none !important;
+  padding: 0;
+  background: #9C9C9C;
+  height: 2px;
+  width: 230px;
+  border-radius: 5px;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance:none !important;
+  background: white;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+ #fader:hover{
+  cursor: pointer;
+}
+ #fader:focus{
+   outline: none;
+ }
+.options{
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.options i{
+  color: #9C9C9C;
+  padding: 15px;
+}
+div .active i{
+  color:#F57216 ;
+}
+div .love i {
+  color:#ff3535;
+}
+ i:hover{
+  cursor: pointer;
+}
+i:focus{
+  outline: none;
+}

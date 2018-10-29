@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Player Music</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+  </head>
+  <body>
+
+    <audio id="audio">
+      <source src="" type="audio/mp3">
+    </audio>
+
+    </audio>
+    <div class="container topo">
+      <div class="bolas">
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <div class="container border border-secondary menu">
+      <div class="center">
+        <div class="cover">
+          <div class="imagem">
+            <ul><img src="img/semImagem.jpg" width="200" height="200" id="imagem"></ul>
+          </div>
+        </div>
+        <ul class="jcarousel-pagination"></ul>
+        <div class="info">
+          <div class="name">
+            <h4 class="musica" id="titulo" align="center"> Musica </h4>
+            <p class="artista" id="artista" align="center">Sem Autor</p>
+          </div>
+        </div>
+      </div>
+      <div class="botao">
+        <div class="action" onload="duration()">
+          <a  class="previus"><i class="fa fa-step-backward" id="previus"></i></a>
+          <a  class="play"><i class="fas fa-play" id="play" onclick="playPause()"></i></a>
+          <a  class="next"><i class="fas fa-step-forward" id="next"></i></a>
+        </div>
+        <div class="barra">
+          <input type="range" min="0" max="100" value="0" id="fader" class="duration" onclick="seeker()"></input>
+        </div>
+        <div class="options">
+          <a  class="shuffle" id="aleatorio"><i class="fa fa-random" onclick="random()"></i></a>
+          <a  class="replay" id="replay"><i class="fas fa-redo-alt" onclick="loop()"></i></a>
+          <a  class="volume"><i class="fas fa-volume-up" id="volume" onclick="setvolume()"></i></a>
+          <a  class="favourite" id="love"><i class="fa fa-heart" id="loveIcone"></i></a>
+        </div>
+      </div>
+    </div>
+   <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
